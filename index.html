@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7198a025c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imagesur/nam.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href='#header'>Home</a></li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#projects'>projects</a></li>
+                    <li><a href='#contact'>contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Web Developer,,</p>
+                <h1>Hi, I'm <span>Surya vamshi</span> <br>from Sangareddy...</h1>
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imagesur/otherphoto.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Motivated individual seeking an entry-level role in a supportive environment where i can apply my skills and knowledge and grow both professionally and personally..</p><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Html</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>SQL</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Oops</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br><br>B.Tech(ECE) in VNRVJIET,Hyderabad</li><br>
+                            <li><span>2017-2019</span><br><br>Intermediate in ST.Anthony's Junior College,Sangareddy</li><br>
+                            <li><span>2017</span><br><br>SSC in ST.Anthony's High School,Sangareddy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-hashtag"></i><br>
+                    <h2>Tic-Tac-Toe Game </h2>
+                    <p>This is a simple Tic-tac-toe <br>game using python..</p><br>
+                    <a href="https://github.com/Suryavamshi630/TICTACTOEGUI-GAME-PYTHON">Link</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-check"></i><br>
+                    <h2>To-Do List </h2>
+                    <p>This is a simple To-Do List project where we <br>can monitor our daily tasks..</p><br>
+                    <a href="https://github.com/Suryavamshi630/TODOLIST-PROJECT-USING-HTML-CSS-AND-JS">Link</a>
+                </div> 
+                
+                 
+            </div>
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="container">
+            <h1 class="title">Contact Me</h1>
+            <h2 class="phone"><i class="fa-sharp fa-solid fa-phone">  </i>+916304613278</h2>
+            <div class="social-icons">
+                <a href="mailto:suryavamshibabu62@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/n-surya-vamshi-babu-35436b1a5"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Suryavamshi630"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/_surya_vamshi_123?igsh=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © surya. Made with <i class="fa-solid fa-heart"></i> for easy learning</p>
+        </div>
+            
+    
+         
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }    
+    </script>
+</body>
+</html>
