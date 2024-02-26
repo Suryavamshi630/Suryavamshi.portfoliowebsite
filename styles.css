@@ -228,9 +228,16 @@ nav .fa-solid{
         margin-top: 100%;
         font-size: 12px;
     }
+    .logo{
+        width: 200px;
+        margin: auto;
+    }    
     .header-text h1{
         font-size: 25px;
     }
+    .header-text p{
+        font-size: 20px;
+    }    
     nav.fa-solid{
         display: block;
         font-size: 25px;
@@ -263,7 +270,7 @@ nav .fa-solid{
         flex-basis: 100%;
     }
     .about-col-1{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .about-col-2{
         font-size: 15px;
