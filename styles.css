@@ -235,10 +235,6 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
-    nav.fa-regular{
-        display: block;
-        font-size: 25px;
-    }
     nav.fa-solid{
         display: block;
         font-size: 25px;
@@ -257,13 +253,6 @@ nav .fa-solid{
     nav ul li{
         display: block;
         margin: 25px;
-    }
-    nav ul .fa-regular{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-
     }
     nav ul .fa-solid{
         position: absolute;
