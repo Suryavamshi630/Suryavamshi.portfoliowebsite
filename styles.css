@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 html{
     scroll-behavior: scroll;
 }
 body{
-    background: #000;
-    color: red;
+    background: black;
+    color: white;
 }
 #header{
     width: 100%;
@@ -66,11 +66,11 @@ nav ul li a:hover::after{
     color: white;
 }
 .header-text h1 span{
-    color: lightcoral;
+    color: lightgreen;
 }
 #about{
     padding: 80px 0;
-    color: lightcyan;
+    color: whitesmoke;
 }
 .row{
     display: flex;
@@ -122,7 +122,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: lightcoral;
+    color: lightgreen;
     font-size: 15px;
 }
 .tab-contents{
@@ -134,6 +134,7 @@ nav ul li a:hover::after{
 #projects{
     padding: 50px 0;
     word-spacing: 5px;
+    color: black;
 }
 .projects-list{
     display: grid;
@@ -142,9 +143,9 @@ nav ul li a:hover::after{
     margin-top: 80px;
 }
 .projects-list div{
-    background: lightcyan;
+    background: cornsilk;
     padding: 60px;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 300;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
@@ -160,23 +161,23 @@ nav ul li a:hover::after{
 }
 .projects-list div a{
     text-decoration: none;
-    color: green;
+    color: grey;
     font-size: 20px;
     margin-top: 10px;
     display: inline-block;
 }
 .projects-list div:hover{
-    background: lightgoldenrodyellow;
+    background: lightgreen;
     transform: translateY(-10px);
 }
 .projects-list div a:hover{
-    background: lightgray;
+    background: lightcyan;
 }
 
 .phone{
     margin-top: 70px;
     text-align: center;
-    color: lightblue;
+    color: lightgreen;
 
 
 }
@@ -196,7 +197,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 40px;
     margin-right: 20px;
-    color: lightcyan;
+    color: lightgreen;
     display: inline-block;
     transition: transform 0.5s;
 }
