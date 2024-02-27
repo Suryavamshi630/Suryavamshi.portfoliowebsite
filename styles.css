@@ -236,7 +236,7 @@ nav ul li a:hover::after{
         font-size: 18px;
     }
     .logo{
-        width: 85%;
+        width: 80%;
     }
     .container nav .fa-solid.fa-circle-xmark, .container nav .fa-solid.fa-bars{
         display: block;
