@@ -258,6 +258,9 @@ nav ul li a:hover::after{
         display: block;
         margin: 25px;
     }
+    nav ul li a{
+        color:black;
+    }    
     nav ul .fa-solid.fa-circle-xmark, nav ul .fa-solid.fa-bars{
         position: absolute;
         top:25px;
